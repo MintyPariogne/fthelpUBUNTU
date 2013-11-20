@@ -1,0 +1,35 @@
+*ubuntu.txt*	personal help file for ubuntu development in vim
+
+Write the following in the .vimrc file >
+	helpt .vim/doc
+which as long as this exists in that directory will make the latest changes to this file usable.
+
+	*TODO set textwidth in Vim modeline
+	*TODO set tabstop option in Vim modeline
+	*TODO set filetype=help in Vim modeline
+	*ERROR if Vim modeline is not in the bottom of the help file
+	*ERROR if a global is set
+	*ERROR I don't know any global options
+
+The first line contains an example of a tag.
+An example of a hot-link is |help.txt| that leads directly to that file.
+When referring to vim option, place it between two single quotes. 'statusline'
+
+This is a column heading ~
+
+==============================================================================
+
+Column heading is followed by section separator line.
+I assume it was created by 78i=<Esc> which would be similar to another acceptable section with 78i-<Esc>
+
+To quote a block of ex-commands verbatim >
+	function Example_Func()
+		echo "Example"
+	endfuction
+<
+
+I need the list for special key name such as <PageDown> and such.
+Also need list of Ctrl characters such as CTRL-X and such.
+Also special are anything between braces {braces}
+
+ vim:tw=78:ts=8:ft=help:norl:
